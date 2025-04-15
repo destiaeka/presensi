@@ -26,7 +26,7 @@ DELIMITER $$
 --
 -- Functions
 --
-CREATE DEFINER=`root`@`localhost` FUNCTION `hitjamkerja` (`id` INT) RETURNS TIME begin
+CREATE DEFINER=`galih`@`localhost` FUNCTION `hitjamkerja` (`id` INT) RETURNS TIME begin
   declare lama time;
   select subtime(jam_pulang, jam_datang) 
   from kehadiran 
